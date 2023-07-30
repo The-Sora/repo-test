@@ -158,4 +158,5 @@ nav:
   - ...
   - Others:
     - ... | flat | Others/*.md # not sorted yet
-  - Faq: Faq/index.md
+  - Faq: Faq/index.
+  
