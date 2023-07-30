@@ -1,0 +1,161 @@
+site_name: Helpers Documents
+site_url: https://docs.rodevs.com/
+copyright: By Rodevs Helpers Department. Not affiliated with Roblox or Discord.
+site_description: Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.
+
+extra_css:
+  - stylesheets/extra.css
+  - https://unpkg.com/mermaid@7.1.2/dist/mermaid.css
+extra_javascript:
+  - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - meta_tag.js
+
+theme:
+    logo: whiteicon.png
+    favicon: bidenrose.png
+    language: en
+    name: material
+    custom_dir: material/.overrides
+    font:
+      text: Roboto
+      code: JetBrains Mono
+    palette:
+      #light
+      -  scheme: default
+         toggle:
+           icon: material/weather-night
+           name: Switch to dark mode
+         primary: blue
+         accent: deep orange
+      -  scheme: slate
+         toggle:
+           icon: material/weather-sunny
+           name: Switch to light mode
+         primary: blue
+         accent: purple
+    features:
+      - announce.dismiss
+      - navigation.top
+      - navigation.tabs
+      - navigation.indexes
+      - navigation.footer
+    admonition:
+      note: fontawesome/solid/sticky-note
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/info-circle
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/question-circle
+      warning: fontawesome/solid/exclamation-triangle
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+extra:
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    actions:
+      - accept
+    cookies:
+      analytics:
+        name: Google Analytics
+        checked: true
+  analytics:
+    provider: google
+    property: G-DK4D1FN7GD
+  generator: false
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/rodevs
+      name: Join the discord server!
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/RoDevsWorld
+      name: Follow us on twitter!
+
+markdown_extensions:
+  - attr_list
+  - abbr
+  - def_list
+  - admonition
+  - meta
+  - pymdownx.details
+  - pymdownx.highlight
+  - md_in_html
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.arithmatex:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid-experimental
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search
+  - awesome-pages
+  - social:
+      cards_color:
+        fill: "#0FF1CE" 
+        text: "#FFFFFF"
+  
+nav:
+  - Home: index.md
+  - Scripting:
+    - ... | flat | Scripting/*.md
+    # - Scripting/home.md
+    - Basic-Courses:
+      - Scripting/Basic-Courses/Introduction_To_Studio.md
+      - Scripting/Basic-Courses/Variables.md
+      - Scripting/Basic-Courses/Strings.md
+      - Scripting/Basic-Courses/operators.md
+      - Scripting/Basic-Courses/basics_of_properties.md
+      - Scripting/Basic-Courses/If_statements.md
+      - Scripting/Basic-Courses/basic_loops.md
+    - Intermediate-Courses:
+      - Scripting/Intermediate-Courses/Basics_of_Functions.md
+      - Scripting/Intermediate-Courses/Tables.md
+      - Scripting/Intermediate-Courses/handling_events.md
+      - Scripting/Intermediate-Courses/Scripts_and_Local_scripts.md
+      - Scripting/Intermediate-Courses/Players_Service.md
+      - Scripting/Intermediate-Courses/Character.md
+      - Scripting/Intermediate-Courses/Tool.md
+      - Scripting/Intermediate-Courses/modules.md
+      - Scripting/Intermediate-Courses/Vector3.md
+      - Scripting/Intermediate-Courses/Position_and_Size.md
+      - Scripting/Intermediate-Courses/Tweening.md
+      - Scripting/Intermediate-Courses/Attributes.md
+      - Scripting/Intermediate-Courses/Data_Stores.md
+      - Scripting/Intermediate-Courses/ContextActionService.md
+      - Scripting/Intermediate-Courses/Collection_Service.md
+      - Scripting/Intermediate-Courses/selection_and_highlights.md
+      - Scripting/Intermediate-Courses/Remote_Events_And_Functions.md
+      - Scripting/Intermediate-Courses/Bindable_events_and_functions.md
+      - Scripting/Intermediate-Courses/intro_of_ui.md
+      - Scripting/Intermediate-Courses/RayCasting.md
+      - Scripting/Intermediate-Courses/globals.md
+    - Advanced-Courses:
+      - Scripting/Advanced-Courses/Vector3_Part_2.md
+      - Scripting/Advanced-Courses/more_about_functions.md
+      - Scripting/Advanced-Courses/More_on_Dictionaries.md
+      - Scripting/Advanced-Courses/metatables.md
+      - Scripting/Advanced-Courses/HttpService.md
+      - Scripting/Advanced-Courses/Inheritance.md
+    # - ... | flat | Scripting/*.md # not sorted yet
+  - ...
+  - Others:
+    - ... | flat | Others/*.md # not sorted yet
+  - Faq: Faq/index.md
